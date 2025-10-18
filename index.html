@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Prayer Times</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div id="location-warning">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <h4>قد يتم تحديد موقعك بشكل غير دقيق إذا اعتمد على شبكة الإنترنت فقط، مما قد يؤدي لاختلاف بسيط في مواقيت الصلاة لبعض المناطق</h4>
+    <h4>Your location may be inaccurate if you rely solely on the Internet, which may result in slight differences in prayer times for some areas.</h4>
+    <div class="line-time"></div>
+</div>
+
+    
+    <div class="container">
+        <div class="hero-sec">
+            <div class="pray">
+
+                <div class="time-now">
+                    <h1 id="timeNow"></h1>
+                </div>
+
+                <div class="prayer-time-box">
+                    <h2 id="prayNow">Check Your Internet</h2>
+                    <h3 style="margin: 10px;">After</h3>
+                    <h2 id="prayTime">Check Your Internet</h2>
+                </div>
+            </div>
+                <div class="time-date-sec">
+                    <div class="date">
+                        <h2 id="dateM">Sorry Can't Find Time Check Your Internet</h2>
+                        <h2 id="dateH">Sorry Can't Find Time Check Your Internet</h2>
+                    </div>
+                </div>
+        </div>
+
+        <div class="main-sec">
+            <div class="pray-time-box-father">
+                <div class="pray-time-box">
+                    <h2>Fajr</h2>
+                    <h3>Early morning prayer; brings light and blessings to the day.</h3>
+                    <h2 id="prayTimeFajr">Check Your Internet</h2>
+                </div>
+
+                <div class="pray-time-box">
+                    <h2>Sunrise</h2>
+                    <h3>Optional prayer; performed just before sunrise for extra reward.</h3>
+                    <h2 id="prayTimeSunrise">Check Your Internet</h2>
+                </div>
+
+                <div class="pray-time-box">
+                    <h2>Dhuhr</h2>
+                    <h3>Midday prayer; refreshes the soul and breaks the day’s routine.</h3>
+                    <h2 id="prayTimeDhuhr">Check Your Internet</h2>
+                </div>
+
+                <div class="pray-time-box">
+                    <h2>Asr</h2>
+                    <h3>Afternoon prayer; reminder to stay mindful and patient.</h3>
+                    <h2 id="prayTimeAsr">Check Your Internet</h2>
+                </div>
+
+                <div class="pray-time-box">
+                    <h2>Maghrib</h2>
+                    <h3>Just after sunset; gratitude for completing the day’s tasks.</h3>
+                    <h2 id="prayTimeMaghrib">Check Your Internet</h2>
+                </div>
+
+                <div class="pray-time-box">
+                    <h2>Isha</h2>
+                    <h3>Night prayer; closes the day with peace and reflection.</h3>
+                    <h2 id="prayTimeIsha">Check Your Internet</h2>
+                </div>
+            </div>
+
+            <div class="other-things">
+                <div class="other-box">
+                    <div class="main-box">
+                        <h2>Tasbih</h2>
+                        <i class="fa-solid fa-hands-praying"></i>
+                    </div>
+
+                    <div class="types-of-tasbih">
+                        <div class="select-type">
+                            <p id="select1"><i class="fa-solid fa-circle"></i></p>
+                            <p id="select2"><i class="fa-solid fa-circle"></i></p>
+                            <p id="select3"><i class="fa-solid fa-circle"></i></p>
+                            <p id="select4"><i class="fa-solid fa-circle"></i></p>
+                            <p id="select5"><i class="fa-solid fa-circle"></i></p>
+                        </div>
+
+                        <div class="tasbih-type" id="allah-akebr">
+                            <h3 id="tasbihTxt">Astaghfirullah</h3>
+                            <div class="buttons">
+                                <button class="tasbihBtn">Click to Count</button>
+                                <button class="clearBtn">Clear</button>
+                            </div>
+                            <span class="countBtn">0</span>
+                            <h6 id="tasbihDes">I seek forgiveness from Allah for my sins and shortcomings.</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-box">
+                    <div class="main-box">
+                        <h2>Daily Hadith</h2>
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    
+                    <div class="hadith-section">
+                        <h2>Today's Hadith</h2>
+                        <h3 class="name-of-hadith-arabic"></h3>
+                        <h3 class="name-of-hadith-english"></h3>
+                        <p class="hadith-text">Loading...</p>
+                        <p class="hadith-translation"></p>
+                        <button id="newHadithBtn">New Hadith</button>
+                    </div>
+                </div>
+
+                <div class="other-box">
+                    <div class="main-box">
+                        <h2>Daily Ayah</h2>
+                        <i class="fa-solid fa-book-quran"></i>
+                    </div>
+
+                    <div class="ayah-section">
+                        <h2>Today's Ayah</h2>
+                        <h3 class="name-of-surah"></h3>
+                        <p class="ayah-text">Loading...</p>
+                        <p class="ayah-translation"></p>
+                        <button id="newAyahBtn">New Ayah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-footer">
+            <div class="footer">
+                <h2>Prayer Times API</h2>
+                <p>Developed by Hisham Akram Shalabi</p>
+            </div>
+        </div>
+
+
+
+
+
+        
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
